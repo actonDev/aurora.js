@@ -15,9 +15,6 @@
   "dependencies": {
     "coffeeify": "^0.6.0"
   },
-  "optionalDependencies": {
-    "speaker": "^0.3.0"
-  },
   "devDependencies": {
     "browserify": "^13.0.1",
     "coffee-script": ">=1.0",
@@ -39,10 +36,5 @@
     "transform": [
       "coffeeify"
     ]
-  },
-  "browser": {
-    "./node": "./browser.coffee",
-    "./src/sources/node/file": "./src/sources/browser/file.coffee",
-    "./src/sources/node/http": "./src/sources/browser/http.coffee"
   }
 }

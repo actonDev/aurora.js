@@ -7,7 +7,6 @@
 #
 
 EventEmitter = require './core/events'
-HTTPSource   = require './sources/node/http'
 FileSource   = require './sources/node/file'
 BufferSource = require './sources/buffer'
 Demuxer      = require './demuxer'
@@ -30,13 +29,7 @@ class Asset extends EventEmitter
             
         @source.on 'progress', (@buffered) =>
             @emit 'buffer', @buffered
-            
-    @fromURL: (url, opts) ->
-        return new Asset new HTTPSource(url, opts)
-
-    @fromFile: (file) ->
-        return new Asset new FileSource(file)
-        
+                    
     @fromBuffer: (buffer) ->
         return new Asset new BufferSource(buffer)
         
