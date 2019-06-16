@@ -22,8 +22,6 @@
 
   exports.Asset = require('./asset');
 
-  exports.Player = require('./player');
-
   exports.Filter = require('./filter');
 
   exports.VolumeFilter = require('./filters/volume');
