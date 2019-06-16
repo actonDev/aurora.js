@@ -1,7 +1,7 @@
 .PHONY: js browser browser_slim test clean
 
 js: src/**/*.coffee
-	./node_modules/.bin/coffee -c node.coffee src/*.coffee src/**/*.coffee src/**/**/*.coffee
+	./node_modules/.bin/coffee -c node.coffee src/*.coffee src/**/*.coffee
 
 server.pid:
 	@./node_modules/.bin/static \

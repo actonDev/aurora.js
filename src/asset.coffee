@@ -7,7 +7,6 @@
 #
 
 EventEmitter = require './core/events'
-FileSource   = require './sources/node/file'
 BufferSource = require './sources/buffer'
 Demuxer      = require './demuxer'
 Decoder      = require './decoder'
